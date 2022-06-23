@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import style from "../styles/Chats.module.scss";
+import style from "./../styles/Chats.module.scss";
 import {Box} from "@mui/system";
 import {
     Button,
@@ -28,7 +28,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import DoneIcon from '@mui/icons-material/Done';
 import DeleteIcon from '@mui/icons-material/Delete';
 import FileUploadIcon from '@mui/icons-material/FileUpload';
-import {useInput} from "../hooks/useInput";
+import {useInput} from "./../hooks/useInput";
 import DialogTitle from "@mui/material/DialogTitle";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";

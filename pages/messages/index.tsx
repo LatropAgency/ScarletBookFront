@@ -1,6 +1,6 @@
 import React from 'react';
-import MainLayout from "../../layouts/MainLayout";
-import Chats from "../../components/Chats";
+import MainLayout from "./../../layouts/MainLayout";
+import Chats from "./../../components/Chats";
 
 const Index = () => {
     return (

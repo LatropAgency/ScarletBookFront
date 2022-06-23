@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, {useState} from 'react';
-import style from '../../styles/LoginForm.module.scss'
+import style from './../../styles/LoginForm.module.scss'
 import {LocalizationProvider} from '@mui/x-date-pickers/LocalizationProvider';
 import {AdapterDateFns} from "@mui/x-date-pickers/AdapterDateFns";
 import classNames from "classnames";
@@ -8,11 +8,11 @@ import FileUploadIcon from "@mui/icons-material/FileUpload";
 import {styled} from "@mui/material/styles";
 import {DesktopDatePicker} from "@mui/x-date-pickers/DesktopDatePicker";
 import {MenuItem, Select, SelectChangeEvent, TextField} from "@mui/material";
-import {useInput} from "../../hooks/useInput";
+import {useInput} from "./../../hooks/useInput";
 import axios from "axios";
 import {useRouter} from "next/router";
 import {ru} from 'date-fns/locale';
-import MainLayout from "../../layouts/MainLayout";
+import MainLayout from "./../../layouts/MainLayout";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import json2mq from 'json2mq';
 

@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import Profile from "../../components/Profile";
+import Profile from "./../../components/Profile";
 import {GetServerSideProps} from "next";
 import axios from "axios";
-import MainLayout from "../../layouts/MainLayout";
+import MainLayout from "./../../layouts/MainLayout";
 import {useRouter} from "next/router";
 
 const Index = () => {

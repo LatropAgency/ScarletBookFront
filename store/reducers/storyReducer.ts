@@ -1,4 +1,4 @@
-import {StoryAction, StoryActionTypes, StoryState} from "../../types/story";
+import {StoryAction, StoryActionTypes, StoryState} from "./../../types/story";
 
 const initialState: StoryState = {
     stories: [],

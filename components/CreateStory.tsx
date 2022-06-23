@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, {useState} from 'react';
-import style from "../styles/CreateStory.module.scss";
+import style from "./../styles/CreateStory.module.scss";
 import {LocalizationProvider} from "@mui/x-date-pickers/LocalizationProvider";
 import {AdapterDateFns} from "@mui/x-date-pickers/AdapterDateFns";
 import classNames from "classnames";
@@ -12,7 +12,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import {DialogTitleProps} from "./LoginForm";
 import FileUploadIcon from "@mui/icons-material/FileUpload";
 import {Autocomplete, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent, TextField} from "@mui/material";
-import {useInput} from "../hooks/useInput";
+import {useInput} from "./../hooks/useInput";
 import axios from "axios";
 import {useRouter} from "next/router";
 

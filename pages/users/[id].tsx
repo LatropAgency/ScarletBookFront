@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {GetServerSideProps} from "next";
 import axios from "axios";
-import Profile from "../../components/Profile";
+import Profile from "./../../components/Profile";
 import {useRouter} from "next/router";
-import MainLayout from "../../layouts/MainLayout";
+import MainLayout from "./../../layouts/MainLayout";
 
 const Id = ({serverUser}) => {
     const [user, setUser] = useState(serverUser)

@@ -1,6 +1,6 @@
 // @ts-nocheck
 import * as React from 'react';
-import style from '../styles/navbarPc.module.scss'
+import style from './../styles/navbarPc.module.scss'
 import RegistrationForm from "./RegistrationForm";
 import LoginForm from "./LoginForm";
 import axios from "axios";

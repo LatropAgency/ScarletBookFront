@@ -1,15 +1,15 @@
 // @ts-nocheck
 import React, {useState} from 'react';
-import {FandomCarousel} from "../components/FandomCarousel";
-import MainLayout from "../layouts/MainLayout";
-import {NextThunkDispatch, wrapper} from "../store";
-import {fetchStories} from "../store/actions-creators/story";
+import {FandomCarousel} from "./../components/FandomCarousel";
+import MainLayout from "./../layouts/MainLayout";
+import {NextThunkDispatch, wrapper} from "./../store";
+import {fetchStories} from "./../store/actions-creators/story";
 import {useRouter} from "next/router";
-import {useTypedSelector} from "../hooks/useTypedSelector";
-import {CarouselFanfic} from "../components/carouselFanfic";
-import LoginForm from "../components/LoginForm";
-import RegistrationForm from "../components/RegistrationForm";
-// import {CarouselFandom} from '../components/carousalFandom';
+import {useTypedSelector} from "./../hooks/useTypedSelector";
+import {CarouselFanfic} from "./../components/carouselFanfic";
+import LoginForm from "./../components/LoginForm";
+import RegistrationForm from "./../components/RegistrationForm";
+// import {CarouselFandom} from './../components/carousalFandom';
 
 
 

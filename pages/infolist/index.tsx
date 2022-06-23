@@ -1,16 +1,16 @@
 import React from 'react';
-import FilterBar from "../../components/FilterBar";
-import MainLayout from "../../layouts/MainLayout";
-import SearchItem from "../../components/SearchItem";
+import FilterBar from "./../../components/FilterBar";
+import MainLayout from "./../../layouts/MainLayout";
+import SearchItem from "./../../components/SearchItem";
 import {Tab, Tabs, TextField} from "@mui/material";
 import {Box} from "@mui/system";
 import {styled} from "@mui/material/styles";
-import Fandoms from "../../components/Fandoms";
+import Fandoms from "./../../components/Fandoms";
 import {Search} from "@mui/icons-material";
-import SearchItems from "../../components/SearchItems";
+import SearchItems from "./../../components/SearchItems";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import json2mq from 'json2mq';
-import style from "../../styles/SearchItem.module.scss";
+import style from "./../../styles/SearchItem.module.scss";
 
 const BootstrapTabs = styled(Tabs)(({theme}) => ({
     '& .Mui-selected': {

@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import Chapter from "../../components/Chapter";
-import MainLayout from "../../layouts/MainLayout";
-import Story from "../../components/Story";
+import Chapter from "./../../components/Chapter";
+import MainLayout from "./../../layouts/MainLayout";
+import Story from "./../../components/Story";
 import {GetServerSideProps} from "next";
 import axios from "axios";
 import {useRouter} from "next/router";
-import Comments from "../../components/Comments";
+import Comments from "./../../components/Comments";
 
 const StoryPage = ({serverStory}) => {
     const [story, setTrack] = useState(serverStory)

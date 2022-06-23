@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, {useState} from 'react';
-import style from '../styles/Profile.module.scss'
+import style from './../styles/Profile.module.scss'
 import Avatar from "@mui/material/Avatar";
 import CreateStory from "./CreateStory";
 import FavoriteIcon from "@mui/icons-material/Favorite";
@@ -17,7 +17,7 @@ import Tab from '@mui/material/Tab';
 import {styled} from "@mui/material/styles";
 import Box from '@mui/material/Box';
 import axios from "axios";
-import s from '../styles/SearchItem.module.scss';
+import s from './../styles/SearchItem.module.scss';
 import AddIcon from '@mui/icons-material/Add';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -27,7 +27,7 @@ import classNames from "classnames";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import json2mq from 'json2mq';
 import TextField from "@mui/material/TextField";
-import {useInput} from "../hooks/useInput";
+import {useInput} from "./../hooks/useInput";
 
 export interface SimpleDialogProps {
     open: boolean;

@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React, {useState} from 'react';
 import {Root} from "postcss";
-import style from '../styles/SearchItem.module.scss';
+import style from './../styles/SearchItem.module.scss';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ListIcon from '@mui/icons-material/List';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
@@ -16,7 +16,7 @@ import {styled} from "@mui/material/styles";
 import Chip from "@mui/material/Chip";
 import AddIcon from "@mui/icons-material/Add";
 import Stack from "@mui/material/Stack";
-import {useInput} from "../hooks/useInput";
+import {useInput} from "./../hooks/useInput";
 import axios from "axios";
 import classNames from "classnames";
 import {useRouter} from "next/router";

@@ -1,6 +1,6 @@
 import {Slider} from '@mui/material';
 import React from 'react';
-import style from '../styles/Chapter.module.scss'
+import style from './../styles/Chapter.module.scss'
 import Comments from './Comments';
 import useMediaQuery from "@mui/material/useMediaQuery";
 import json2mq from 'json2mq';

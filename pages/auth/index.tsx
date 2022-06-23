@@ -1,9 +1,9 @@
 import React from 'react';
-import style from "../../styles/RegistrationForm.module.scss";
-import {useInput} from "../../hooks/useInput";
+import style from "./../../styles/RegistrationForm.module.scss";
+import {useInput} from "./../../hooks/useInput";
 import axios from "axios";
 import {useRouter} from 'next/router';
-import MainLayout from "../../layouts/MainLayout";
+import MainLayout from "./../../layouts/MainLayout";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import json2mq from 'json2mq';
 // import { signIn, signOut, useSession } from 'next-auth';

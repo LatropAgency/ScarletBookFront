@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import {styled} from "@mui/material/styles";
 import * as React from "react";
-import style from '../styles/Modal.module.scss';
+import style from './../styles/Modal.module.scss';
 import PropTypes from "prop-types";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";

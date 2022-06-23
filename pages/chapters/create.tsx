@@ -1,10 +1,10 @@
 // @ts-nocheck
 import React from 'react';
-import style from '../../styles/Chapter.module.scss';
+import style from './../../styles/Chapter.module.scss';
 import {styled} from "@mui/material/styles";
 import {TextField} from '@mui/material';
-import MainLayout from "../../layouts/MainLayout";
-import {useInput} from "../../hooks/useInput";
+import MainLayout from "./../../layouts/MainLayout";
+import {useInput} from "./../../hooks/useInput";
 import axios from "axios";
 import { useRouter } from 'next/router';
 import useMediaQuery from "@mui/material/useMediaQuery";

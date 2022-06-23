@@ -1,13 +1,13 @@
 // @ts-nocheck
 import React, { useState } from "react";
-import s from '../styles/EditProfile.module.scss';
+import s from './../styles/EditProfile.module.scss';
 import classNames from "classnames";
 import FileUploadIcon from "@mui/icons-material/FileUpload";
 import {alpha, Autocomplete, styled, Switch, TextField} from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import json2mq from 'json2mq';
 import axios from "axios";
-import {useInput} from "../hooks/useInput";
+import {useInput} from "./../hooks/useInput";
 
 const RedSwitch = styled(Switch)(({theme}) => ({
     '& .MuiSwitch-switchBase.Mui-checked': {

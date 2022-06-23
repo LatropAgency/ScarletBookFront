@@ -2,12 +2,12 @@
 import React, {useState} from 'react';
 import {styled} from "@mui/material/styles";
 import {Autocomplete, MenuItem, Select, SelectChangeEvent, TextField} from "@mui/material";
-import style from "../../styles/CreateStory.module.scss";
+import style from "./../../styles/CreateStory.module.scss";
 import classNames from "classnames";
 import FileUploadIcon from "@mui/icons-material/FileUpload";
-import MainLayout from '../../layouts/MainLayout';
+import MainLayout from './../../layouts/MainLayout';
 import axios from "axios";
-import {useInput} from "../../hooks/useInput";
+import {useInput} from "./../../hooks/useInput";
 import {useRouter} from "next/router";
 
 const BootstrapTextField = styled(TextField)(({theme}) => ({

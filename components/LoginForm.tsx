@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, {useState} from 'react';
-import style from '../styles/LoginForm.module.scss'
+import style from './../styles/LoginForm.module.scss'
 import Button from '@mui/material/Button';
 import {styled} from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';

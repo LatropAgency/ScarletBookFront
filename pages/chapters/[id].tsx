@@ -1,7 +1,7 @@
 import React from 'react';
-import Chapter from "../../components/Chapter";
-import MainLayout from "../../layouts/MainLayout";
-import Comments from "../../components/Comments";
+import Chapter from "./../../components/Chapter";
+import MainLayout from "./../../layouts/MainLayout";
+import Comments from "./../../components/Comments";
 import {GetServerSideProps} from "next";
 import axios from "axios";
 

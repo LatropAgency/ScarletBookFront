@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import style from '../styles/RegistrationForm.module.scss'
+import style from './../styles/RegistrationForm.module.scss'
 import Button from '@mui/material/Button';
 import {styled} from '@mui/material/styles';
 import Dialog from '@mui/material/Dialog';
@@ -10,7 +10,7 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
-import {useInput} from "../hooks/useInput";
+import {useInput} from "./../hooks/useInput";
 import {useRouter} from "next/router";
 import axios from "axios";
 

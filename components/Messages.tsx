@@ -1,13 +1,13 @@
 // @ts-nocheck
 import React, {useEffect, useRef, useState} from 'react';
-import style from '../styles/Chats.module.scss';
+import style from './../styles/Chats.module.scss';
 import {styled} from "@mui/material/styles";
 import {TextField} from "@mui/material";
 import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
 import axios from "axios";
-import {useInput} from "../hooks/useInput";
+import {useInput} from "./../hooks/useInput";
 
 const BootstrapTextField = styled(TextField)(({theme}) => ({
     '& .MuiOutlinedInput-root': {

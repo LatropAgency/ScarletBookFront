@@ -1,8 +1,8 @@
 // @ts-nocheck
 import React, {PropsWithChildren} from 'react';
-import NavbarMobile from "../components/NavbarMobile";
+import NavbarMobile from "./../components/NavbarMobile";
 import {Props} from "next/script";
-import {Navbar} from "../components/Navbar";
+import {Navbar} from "./../components/Navbar";
 import json2mq from 'json2mq';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {Head} from 'next/document';

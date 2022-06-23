@@ -1,9 +1,9 @@
 import {Box, Tab, Tabs} from '@mui/material';
 import React from 'react';
-import MainLayout from "../../layouts/MainLayout";
-import style from '../styles/Profile.module.scss'
+import MainLayout from "./../../layouts/MainLayout";
+import style from './../styles/Profile.module.scss'
 import {styled} from "@mui/material/styles";
-import AdministrationPanel from "../../components/AdministrationPanel";
+import AdministrationPanel from "./../../components/AdministrationPanel";
 
 const BootstrapTabs = styled(Tabs)(({theme}) => ({
     '& .Mui-selected': {

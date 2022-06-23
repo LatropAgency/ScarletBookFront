@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import style from '../styles/Comments.module.scss'
+import style from './../styles/Comments.module.scss'
 import axios from "axios";
-import {useInput} from "../hooks/useInput";
+import {useInput} from "./../hooks/useInput";
 import {useRouter} from 'next/router';
 import {TextField} from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";

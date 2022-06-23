@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import EditProfile from '../../components/EditProfile';
-import MainLayout from "../../layouts/MainLayout";
+import EditProfile from './../../components/EditProfile';
+import MainLayout from "./../../layouts/MainLayout";
 
 const Edit = () => {
     const [user, setUser] = useState({})

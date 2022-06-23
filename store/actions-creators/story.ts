@@ -1,5 +1,5 @@
 import {Dispatch} from "react";
-import {StoryAction, StoryActionTypes} from "../../types/story";
+import {StoryAction, StoryActionTypes} from "./../../types/story";
 import axios from "axios";
 
 export const fetchStories = () => {
