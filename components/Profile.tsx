@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {useState} from 'react';
 import style from '../styles/Profile.module.scss'
 import Avatar from "@mui/material/Avatar";

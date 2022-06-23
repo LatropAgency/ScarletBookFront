@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import style from '../../styles/Chapter.module.scss';
 import {styled} from "@mui/material/styles";

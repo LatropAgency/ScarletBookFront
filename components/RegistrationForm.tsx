@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import style from '../styles/RegistrationForm.module.scss'
 import Button from '@mui/material/Button';
@@ -88,7 +89,7 @@ const RegistrationForm = () => {
                 console.log(localStorage.getItem('token'))
                 location.reload()
             })
-            .catch(e => error(e.message))
+            .catch(e => error(e.response.data.message))
     }
 
     return (

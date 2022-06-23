@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import style from "../../styles/RegistrationForm.module.scss";
 import {useInput} from "../../hooks/useInput";

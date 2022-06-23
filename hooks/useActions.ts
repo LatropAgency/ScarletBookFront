@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {useDispatch} from "react-redux";
 import {bindActionCreators} from "redux";
 import ActionCreators from '../store/actions-creators'

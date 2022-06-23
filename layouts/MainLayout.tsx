@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {PropsWithChildren} from 'react';
 import NavbarMobile from "../components/NavbarMobile";
 import {Props} from "next/script";

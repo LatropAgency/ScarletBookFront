@@ -4,8 +4,13 @@ import axios from "axios";
 import {useInput} from "../hooks/useInput";
 import {useRouter} from 'next/router';
 import {TextField} from "@mui/material";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 const Comments = ({comments, userId, storyId, forStory}) => {
+    comments.forEach((e) => {
+        e.isActive = false;
+        e.count = 0;
+    })
     const [commentsVal, setComments] = React.useState(comments)
     let text = useInput('')
     const [input, setInput] = useState('');
@@ -56,6 +61,29 @@ const Comments = ({comments, userId, storyId, forStory}) => {
             })
             .catch(e => console.log(e.message))
     }
+    React.useEffect( () => {
+        function fetchMyAPI() {
+        }
+        fetchMyAPI()
+    }, [commentsVal])
+    const addLike = (id) => {
+        commentsVal.forEach((e) => {
+            if(e.id === id && e.isActive === false){
+                e.isActive = true;
+                e.count = 1;
+                console.log(e)
+                console.log('active')
+            }else {
+                if (e.id === id && e.isActive === true) {
+                    e.isActive = false;
+                    e.count = 0;
+                    console.log('inactive')
+                }
+            }
+        })
+        console.log(commentsVal)
+        setComments(JSON.parse(JSON.stringify(commentsVal)))
+    }
     return (
         <div className={style.section}>
             <div className={style.container2}>
@@ -81,7 +109,9 @@ const Comments = ({comments, userId, storyId, forStory}) => {
                                         <div className={style.userCom}>{comment.user.username}</div>
                                         <div style={{fontSize: '10pt'}} className={style.date}>{new Date(comment.createdAt).getDate()+ '-'+new Date(comment.createdAt).getMonth()+ '-' + new Date(comment.createdAt).getFullYear()
                                             +' ' + new Date(comment.createdAt).getHours()+':'+new Date(comment.createdAt).getMinutes()}</div>
-                                        <p className={style.textCommentClass}>{comment.text}</p>
+                                        <p style={{display:'flex', justifyContent:'space-between', width:'75vw'}} className={style.textCommentClass}><div>{comment.text}</div><div style={{display: 'flex', justifyContent: 'center', alignItems:'center'}}>
+                                            {comment.isActive ? <FavoriteIcon onClick={() => addLike(comment.id)} sx={{color: 'red', cursor: 'pointer', margin: '0 7px 0 0', fontSize: '1.2rem'}}/> : <FavoriteIcon onClick={() => addLike(comment.id)} sx={{color: '#C9C9C9', cursor: 'pointer', fontSize: '1.2rem', margin: '0 7px 0 0'}}/>}
+                                            {comment.count}</div></p>
                                         <div>
                                             {comment.user.id === userId ?
                                                 <button style={{cursor: 'pointer'}} onClick={() => deleteComment(comment.id)} className={style.commentBtn}>Удалить</button> : ''}

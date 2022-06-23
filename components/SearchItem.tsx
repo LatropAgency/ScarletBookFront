@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {useState} from 'react';
 import {Root} from "postcss";
 import style from '../styles/SearchItem.module.scss';

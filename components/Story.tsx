@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {useEffect, useState} from 'react';
 import style from '../styles/SearchItem.module.scss'
 import FavoriteIcon from "@mui/icons-material/Favorite";

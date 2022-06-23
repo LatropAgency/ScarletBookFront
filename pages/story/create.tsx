@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {useState} from 'react';
 import {styled} from "@mui/material/styles";
 import {Autocomplete, MenuItem, Select, SelectChangeEvent, TextField} from "@mui/material";

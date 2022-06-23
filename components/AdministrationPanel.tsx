@@ -410,12 +410,17 @@ const Fandoms= ({type}) => {
     }
     const saveFields = (id) =>{
         const formData = new FormData()
+        // @ts-ignore
         formData.append('name', valueName.current.value)
+        // @ts-ignore
         formData.append('description', valueDescription.current.value)
         console.log(photo)
+        // @ts-ignore
         if(photo === '' && valueName.current.value !== '' && valueDescription.current.value !== ''){
             const payload = {
+                // @ts-ignore
                 name: valueName.current.value,
+                // @ts-ignore
                 description: valueDescription.current.value
             }
             axios.patch('http://localhost:9000/'+ type+'/'+id, payload,{
@@ -431,6 +436,7 @@ const Fandoms= ({type}) => {
 
             })
         }
+        // @ts-ignore
         if(photo !== '' && valueName.current.value !== '' && valueDescription.current.value !== ''){
             formData.append('image', photo)
             axios.patch('http://localhost:9000/'+ type+'/'+id+ '/update-with-image', formData,{
@@ -555,7 +561,9 @@ const CustomizedTables = (type) => {
     let token;
     const saveFields = (id, genreName, reqId) =>{
         const formData = new FormData()
+        // @ts-ignore
         formData.append('name', valueName.current.value)
+        // @ts-ignore
         formData.append('description', valueDescription.current.value)
         formData.append('image', photo)
         const payload = {
@@ -564,6 +572,7 @@ const CustomizedTables = (type) => {
         if(type === 'genres') payload.text='Ваша заявка на добавления жанра рассмотрена. Жанр "'+genreName+'" добавлен на сайт'
         else payload.text='Ваша заявка на добавления фандома рассмотрена. Фандом "'+genreName+'" добавлен на сайт'
         token = localStorage.getItem('token');
+        // @ts-ignore
         if (token && photo && valueName.current.value !== '' && valueDescription.current.value !== '') {
             axios.post('http://localhost:9000/notifications', payload,{
                 headers: {
@@ -585,8 +594,6 @@ const CustomizedTables = (type) => {
                         })
                     })
         }
-        console.log(valueName.current.value)
-        console.log(valueDescription.current.value)
         setValue(null)
     }
     const [open, setOpen] = React.useState(false);
@@ -610,6 +617,7 @@ const CustomizedTables = (type) => {
     };
     const onMainPhotoSelected = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.files && e.target.files.length) {
+            // @ts-ignore
             setPhoto(e.target.files[0]);
         }
     }

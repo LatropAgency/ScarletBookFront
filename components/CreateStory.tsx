@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {useState} from 'react';
 import style from "../styles/CreateStory.module.scss";
 import {LocalizationProvider} from "@mui/x-date-pickers/LocalizationProvider";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import style from '../styles/Search.module.scss'
 import SearchIcon from '@mui/icons-material/Search';

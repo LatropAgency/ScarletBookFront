@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {useEffect, useRef, useState} from 'react';
 import style from '../styles/Chats.module.scss';
 import {styled} from "@mui/material/styles";

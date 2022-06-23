@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {useState} from 'react';
 import style from '../styles/LoginForm.module.scss'
 import Button from '@mui/material/Button';

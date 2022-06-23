@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import {BottomNavigation, BottomNavigationAction, Paper} from "@mui/material";
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';

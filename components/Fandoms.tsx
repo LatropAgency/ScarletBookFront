@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import style from '../styles/SearchItem.module.scss'
 import {Box} from "@mui/system";

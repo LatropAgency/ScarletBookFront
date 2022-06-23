@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from "react";
 import s from '../styles/EditProfile.module.scss';
 import classNames from "classnames";

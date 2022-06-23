@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {useState} from 'react';
 import {FandomCarousel} from "../components/FandomCarousel";
 import MainLayout from "../layouts/MainLayout";
