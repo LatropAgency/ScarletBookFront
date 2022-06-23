@@ -1,0 +1,466 @@
+.section1 {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../static/images/backgroundRed.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 200%;
+}
+.a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+.a:hover {
+  background-size: 100% 2px;
+}
+.section11 {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../static/images/backgroundRed.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 200%;
+  width: 100%;
+}
+
+.section2 {
+  margin: 57px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../static/images/backgroundRed.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 300%;
+}
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container2 {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 57px 0;
+}
+
+.container1 {
+  padding: 20px;
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.4);
+}
+
+.storyBlock {
+  display: flex;
+  width: 85vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  //background-color: white;
+}
+
+.storyOne {
+  display: flex;
+  flex-direction: row;
+  width: 49%;
+  height: 300px;
+  margin: 0 0 20px;
+  background-color: white;
+}
+
+.storyOne img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.storyOneImg {
+  padding: 0 10px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.storyOne2 {
+  display: flex;
+  flex-direction: row;
+  width: 49%;
+  height: 300px;
+  margin: 0 0 20px;
+  background-color: white;
+}
+
+.storyOne2 img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.storyOneImg2 {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.descriptionStory {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+  width: 50%;
+}
+
+.likes {
+  display: flex;
+  font-family: Calibri;
+  font-size: 10pt;
+  font-weight: bold;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.likes img {
+  width: 20px;
+  height: 18.5px;
+  object-fit: cover;
+  margin: 0 5px 0 0;
+}
+
+.status {
+  background-color: #F5BDBD;
+  border-radius: 7px;
+  padding: 2px 7px;
+  font-weight: normal;
+}
+
+.descriptionSt {
+  text-align: justify;
+  text-overflow: ellipsis;
+  max-height: 128px;
+  overflow: hidden;
+}
+.descriptionSt2 {
+  text-align: justify;
+  text-overflow: ellipsis;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+.ganresStory {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 9pt;
+  margin: 8px 0;
+}
+
+.ganresStory div {
+  background-color: #C9C9C9;
+  border-radius: 6.5px;
+  padding: 2px 7px;
+  margin: 0 5px 5px 0;
+}
+
+.readMark {
+  display: flex;
+  margin: 5px 5px 0 0;
+  justify-content: flex-end;
+}
+
+.readMark button {
+  background-color: #FF2400;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5px 6px;
+  height: 25px;
+  font-size: 9pt;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.readMark img {
+  width: 15px;
+  height: 25px;
+}
+
+
+.imageStory {
+  width: 50%;
+  padding: 0 10px 0;
+}
+.imageStory2 {
+  width: 50%;
+  padding: 0 10px 0;
+  object-fit: cover;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.storyDescription {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.author {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 16pt;
+  align-items: center;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.author p {
+  padding-left: 20px;
+}
+
+.imageStory {
+  object-fit: cover;
+}
+
+.read {
+  display: flex;
+  margin: 5px 5px 0 10px;
+  justify-content: flex-start;
+}
+
+.read button {
+  background-color: #FF2400;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5px 6px;
+  height: 25px;
+  font-size: 9pt;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.description {
+  font-size: 16pt;
+  color: #4D4D4D;
+  font-family: 'Calibri Light';
+  text-align: justify;
+}
+.contents{
+  width: 100%;
+}
+.contents p {
+  font-size: 16pt;
+  padding: 0;
+  color: #4D4D4D;
+  margin: 0;
+}
+
+.chapters {
+  font-size: 18pt;
+}
+.chapter{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.hr {
+  height: 1.5pt;
+  background-color: #FF2400;
+  border: none;
+}
+.forGet{
+  background-image:url(../static/images/backgroundForViewGet.svg);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position:bottom;
+}
+.forSlesh{
+  background-image:url(../static/images/backgroundSlesh.svg);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position:bottom;
+}
+.forFem{
+  background-image:url(../static/images/backgroundFem.svg);
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position:bottom;
+}
+.descriptionStory h3 {
+  margin: 3px 0
+}
+@media (min-width: 150px) and (max-width: 2000px) {
+  .storyBlock {
+    display: flex;
+    width: 95vw;
+  }
+  .storyOne2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    background-color: white;
+  }
+  .storyOne2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+  }
+  .storyOne2 img {
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+  }
+  .imageStory {
+    width: 50%;
+    height: 90%;
+  }
+  .section2 {
+    background-size: 700%;
+  }
+  .container2{
+    width: 85%;
+  }
+  .container1 {
+    width: 75%;
+    height: auto;
+  }
+  .imageStory2{
+    width: 40%;
+    height: 100%;
+  }
+  .storyDescription h1{
+    font-size: 24px;
+  }
+  .author img {
+    width: 35px;
+    height: 35px;
+  }
+  .section1{
+    background-size: 900%;
+  }
+}
+@media (min-width: 150px) and (max-width: 850px) {
+  .description{
+    font-size: 14pt;
+  }
+  .chapter p{
+    font-size: 16pt;
+  }
+  .chapters {
+    font-size: 16pt;
+  }
+  .storyDescription h1{
+    font-size: 24px;
+  }
+  .imageStory2{
+    width: 40%;
+  }
+  .storyOne {
+    height: 30vh;
+    width: 100%;
+  }
+  .storyOne2 {
+    height: 30vh;
+  }
+  .imageStory {
+    width: 30%;
+    height: 90%;
+  }
+  .descriptionStory {
+    display: flex;
+    flex-direction: column;
+    font-size: 10pt;
+    margin: 0px 10px;
+    width: 60%;
+  }
+  .descriptionStory h3{
+    margin: 0;
+  }
+  .container2{
+    width: 95%!important;
+  }
+  .storyBlock {
+    display: flex;
+    width: 100vw;
+  }
+  .likes>div> svg{
+    font-size: 1rem
+  }
+  .readMark{
+    align-items: center;
+  }
+}
+@media (min-width: 150px) and (max-width: 480px){
+  .imageStory2{
+    width: 60%;
+    height: 200px;
+  }
+  .container1{
+    width: 80%;
+  }
+  .author img {
+    width: 30px;
+    height: 30px;
+  }
+  .author p{
+    font-size: 18px;
+  }
+}
+@media (min-width: 150px) and (max-width: 640px) {
+  .container1 {
+    height: auto;
+  }
+}
+@media (min-width: 150px) and (max-width: 760px) {
+  .descriptionSt {
+    max-height: 110px;
+  }
+  .descriptionSt2 {
+    max-height: 85px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .itemImg {
+    height: 296px;
+    width: 197px;
+  }
+}

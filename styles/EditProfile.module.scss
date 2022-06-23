@@ -1,0 +1,348 @@
+.editInfoBlock {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../static/images/backgroundRed.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 200%;
+}
+
+.container1 {
+  padding: 20px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.4);
+}
+
+.photos {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+}
+.photos img{
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.submit{
+  background-color: #FF2400;
+  border: none;
+  border-radius: 24px;
+  padding: 5px 15px;
+  font-size: 12pt;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upload{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.upload2{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 360px;
+  height: 400px;
+  margin: 0 10px 0 0;
+}
+
+.photoName {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.formGroup{
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example2 .inputFile{
+  width:.1px;
+  height:.1px;
+  opacity:0;
+  overflow:hidden;
+  position:absolute;
+  z-index:-1
+}
+.example2 .inputFile + .jsLabelFile{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  padding:0 10px;
+  cursor:pointer
+}
+.example2 .inputFile + .jsLabelFile .icon:before{content:"\f093"}
+.example2 .inputFile + .jsLabelFile.has-file .icon:before{content:"\f00c";color:#5AAC7B}
+
+.label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit{
+  margin: 10px 0;
+  background-color: #FF2400;
+  border: none;
+  border-radius: 24px;
+  padding: 5px 15px;
+  font-size: 12pt;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.secondP {
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 1.29;
+  text-align: left;
+  font-weight: 400;
+  color: #9d9aa8;
+}
+
+
+
+
+
+.largePhoto {
+  grid-area: l;
+  max-width: 80px;
+  width: 100%;
+  max-height: 80px;
+  border: solid 2px #61dafb;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.smallPhoto {
+  grid-area: s;
+  max-width: 50px;
+  width: 100%;
+  max-height: 50px;
+  border: solid 2px #61dafb;
+  border-radius: 40px;
+}
+
+
+.name p {
+  margin-bottom: 5px;
+}
+
+.aboutMeSkills {
+  grid-area: aboutMeSkills;
+
+  display: grid;
+  grid-template-areas: "h3" "aboutMe" "checkbox" "skills";
+  grid-template-rows: 20px 63px 27px 40px;
+  grid-row-gap: 30px;
+}
+
+.aboutMeSkills h3 {
+  grid-area: h3;
+}
+
+.aboutMe {
+  grid-area: aboutMe;
+}
+
+.aboutMe p{
+  margin-bottom: 5px;
+}
+
+.checkbox {
+  grid-area: checkbox;
+  display: grid;
+  grid-template-areas: "checkboxP checkboxSpan";
+  grid-template-columns: 190px auto;
+}
+
+.checkbox span {
+  grid-area: checkboxSpan;
+}
+
+.checkbox p {
+  grid-area: checkboxP;
+}
+
+
+.skills {
+  grid-area: skills;
+}
+
+.skills p{
+  margin-bottom: 5px;
+}
+
+.contacts {
+  grid-area: contacts;
+
+  display: grid;
+  grid-template-areas: "h3" "cont" "buttons";
+  grid-template-rows: 20px 180px 60px;
+  grid-template-columns: 100%;
+  grid-row-gap: 40px;
+
+
+}
+
+.contacts h3 {
+  grid-area: h3;
+}
+
+.cont {
+  grid-area: cont;
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+
+
+}
+
+.contactKey {
+  font-family: "Calibri Light";
+  font-size: 12pt;
+  font-weight: 600;
+  line-height: 1.29;
+  text-align: left;
+  color: var(--1a122d-w-text-color);
+}
+
+.buttons {
+  grid-area: buttons;
+  justify-self: center;
+  height: 50px;
+  width: 400px;
+}
+
+.save {
+  width: 157px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: #6d57f6;
+  outline: none;
+  border: none;
+  margin-left: 3.5%;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cancel {
+  width: 108px;
+  height: 48px;
+  outline: none;
+  border-radius: 24px;
+  border: solid 1px #6d57f6;
+  background-color: #ffffff;
+
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  text-align: center;
+  color: #6d57f6;
+}
+
+
+.h3 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+  color: var(--b-w-text-color);
+}
+
+.p {
+  font-family: "Calibri Light";
+  font-size: 12pt;
+  font-weight: 600;
+  line-height: 1.29;
+  text-align: left;
+  margin: 5px;
+  color: var(--b-w-text-color);
+
+}
+
+
+.input {
+  height: 30px;
+  width: 250px;
+  border: none;
+  border-radius: 15px;
+  margin: 5px 0;
+  background-color: #C9C9C9;
+  box-shadow: #A01010 0px 0px 7px 0px;
+  outline: none;
+  padding: 0px 10px;
+}
+
+.input fieldset{
+  border: none;
+}
+
+@media screen and (max-width: 600px){
+  .editInfoBlock {
+    width: 100%;
+    height: 100%;
+    color: var(--1a122d-w-text-color);
+    background-color: var(--wrap-bg-color);
+    border-radius: 10px;
+    padding: 30px 3.5% 30px 3.5%;
+
+    grid-template-areas: "photoName" "aboutMeSkills" "contacts";
+    grid-template-rows: 280px 280px 420px;
+    grid-template-columns: 100%;
+    grid-gap: 5%;
+  }
+  .contacts {
+    grid-template-rows: 20px 230px 65px;
+    grid-row-gap: 20px;
+  }
+  .contacts h3 {
+    width: 250px;
+  }
+  .cont {
+    grid-template-columns: repeat(2, 50%);
+    grid-row-gap: 10px;
+    width: 100%;
+  }
+  .contactKey {
+    width: 100px;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .cancel {
+    margin-left: 5%;
+  }
+}
+

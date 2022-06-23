@@ -1,0 +1,115 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../static/images/backgroundRed.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 400%;
+}
+
+.container1 {
+  padding: 20px;
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  height: 80vh;
+  flex-direction: column;
+  background-color: white;
+  flex-wrap: wrap;
+}
+.MuiTabs-indicator{
+  background-color: #A01010;
+  height: 10px;
+}
+.messageFrom{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.messageFrom p{
+  background-color: #B1B1B1;
+  padding: 2px 5px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+.myMessage{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.myMessage p{
+  background-color: #F5BDBD;
+  margin: 5px 0;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+.message{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.input{
+  height: auto;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  margin: 5px 0;
+  //background-color: #C9C9C9;
+  outline: none;
+  padding: 0px 10px;
+}
+.input fieldset{
+  border: none;
+  padding: 0;
+}
+.submit{
+  background-color: #FF2400;
+  border: none;
+  border-radius: 24px;
+  padding: 5px 15px;
+  font-size: 12pt;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.submit:hover{
+  background-color: #F5BDBD;
+}
+@media (min-width: 150px) and (max-width: 750px) {
+  .container1 {
+    padding: 0px;
+    width: 100%;
+  }
+  .section{
+    margin: 0;
+  }
+}
+
+.example2 .inputFile{
+  width:.1px;
+  height:.1px;
+  opacity:0;
+  overflow:hidden;
+  position:absolute;
+  z-index:-1
+}
+.example2 .inputFile + .jsLabelFile{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  padding:0 10px;
+  cursor:pointer
+}
+.example2 .inputFile + .jsLabelFile .icon:before{content:"\f093"}
+.example2 .inputFile + .jsLabelFile.has-file .icon:before{content:"\f00c";color:#5AAC7B}
+.MuiOutlinedInput-input{
+  background-color: red;
+}

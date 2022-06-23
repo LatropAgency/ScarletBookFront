@@ -1,0 +1,258 @@
+.navContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto 100px!important;
+  height: 114px;
+  position: fixed;
+  top:0;
+  z-index: 200;
+  background-color: white;
+  box-shadow: 2px 2px 15px 5px rgb(0 0 0 / 40%);
+}
+.navitems {
+  font-family: Verdana;
+  font-size: 16pt;
+  color: #423642;
+}
+
+.logo {
+  margin: 98px 0 0 0;
+  background-image: url("../static/images/logo3.svg");
+  background-repeat: no-repeat;
+  width: 248px;
+  height: 196px;
+  position: relative;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  font-family: Verdana;
+  z-index: 1000;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  transition: .4s ease-in-out;
+}
+
+.navli {
+  display: inline-block;
+  position: relative;
+}
+
+.navli > a {
+  font-family: Verdana;
+  font-size: 12pt;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 30px;
+  color: #000;
+}
+
+.navli:hover {
+  color: black;
+}
+
+.ganres {
+  background: white;
+  /*border: 1px solid #000;*/
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 200px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+}
+
+.navli:hover .ganres {
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
+
+.ganres2 {
+  background: white;
+  /*border: 1px solid #000;*/
+  position: absolute;
+  left: -30px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  width: 200px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: .6s ease-in-out;
+}
+
+.navli:hover .ganres2 {
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
+
+.ganresli a {
+  color: black;
+  font-size: 10pt;
+  line-height: 36px;
+  padding: 0 25px;
+
+}
+.ganresli{
+  margin: 10px;
+  font-size: 12pt;
+}
+
+.ganresli:hover {
+  font-weight: bold;
+  color: #A01010;
+}
+
+
+.search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #D3D3D3;
+  border-radius: 25px;
+  height: 35px;
+  width: 280px;
+}
+
+.search img {
+  width: 15.3px;
+  height: auto;
+  margin: 10px;
+}
+
+.search input {
+  outline: none;
+  border: none;
+  background-color: #D3D3D3;
+  width: 85%;
+}
+
+.ganreNav{
+  display: flex;
+  justify-content: flex-end;
+  /* flex-grow: 1; */
+  flex-basis: 40%;
+}
+.logoNav{
+  flex-basis: 20%;
+  /* margin: auto; */
+  display: flex;
+  justify-content: space-around;
+}
+.profileNav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex-grow: 1; */
+  flex-basis: 40%;
+}
+
+.displayS {
+  background: white;
+  position: absolute;
+  top: 75px;
+  visibility: visible;
+  z-index: 1000;
+  width: 350px;
+  box-shadow: 10px 5px 20px #423642;
+}
+.displayS div{
+  cursor: pointer;
+  font-size: 12pt;
+  margin: 10px;
+}
+.displayS div:hover{
+  cursor: pointer;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #A01010;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.username {
+  font-family: Verdana;
+  font-size: 14pt;
+  color: black;
+  cursor: pointer;
+}
+
+.photo {
+  border-radius: 100%;
+  background: #423642;
+  width: 50px;
+  height: 50px;
+  margin: 0px 0px 0px 20px;
+  object-fit: cover;
+}
+.login{
+  font-family: Verdana;
+  font-size: 10pt;
+  color: black;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.login button{
+
+}
+.reg{
+  font-family: Verdana;
+  font-size: 10pt;
+  color: black;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.reg button{
+
+}
+
+@media (min-width: 150px) and (max-width: 1080px) {
+  .search {
+    width: 240px;
+  }
+}
+
+@media (min-width: 150px) and (max-width: 1000px) {
+  .search {
+    width: 220px;
+  }
+}
+
+@media (min-width: 150px) and (max-width: 980px) {
+  .search {
+    width: 200px;
+  }
+}
+@media (min-width: 150px) and (max-width: 950px) {
+  .search {
+    width: 150px;
+  }
+}
